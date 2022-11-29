@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tutors Alike Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="index-style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navBar" id="mainNavBar">
+    <a href="home.html">
+      <h2>TUTORS ALIKE INC.</h2>
+    </a>
+    <a id="aboutP" href="about.html">ABOUT</a>
+    <a id="searchP" href="search.html">SEARCH</a>
+    <a id="bookP" href="booking.html">BOOK</a>
+    <a id="registerP" href="register.html">REGISTER</a>
+  </div>
+    <div>
+      <img src="https://i.imgur.com/vlg8Jen.jpg">
+    </div>
+    <h2>Our Services</h2>
+    <h3 class="box">Welcome to Tutors Alike Inc. Whether you are a student or parent looking for a tutor for your child, we are here to match you with a tutor that will fit your academic needs. Tutors Alike Inc. matches you with tutors that specialize in various academic levels and a range of subjects including french, physics, english, coding, economics, acting, and many more. Here at Tutors Alike Inc., we are here to support and help you succeed!
+    <br><br>Using our search page, narrow down tutors based on geographical location, subject/level and price range! To improve your grades or home-schooling experience, start searching for certified tutors today!</h3>
+    <div class="input">
+      <input type="submit" class="button" id="searching" value="START SEARCHING" onclick="location.href='search.html'">
+    </div>
+    <br><br><br>
+    <section class="footer">
+      <div class="footer">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="width:70%">
+                <h5 id="footerHome"><a href="home.html"><b>TUTORS ALIKE INC.<b></a></h5>
+              </td>
+              <td>
+                <h6 id="footer">&nbsp;<a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;</h6>
+              </td>
+              <td>
+                <h6 id="footer">&nbsp;<a href="search.html">SEARCH</a>&nbsp;&nbsp;&nbsp;</h6>
+              </td>
+              <td>
+                <h6 id="footer">&nbsp;<a href="booking.html">BOOK</a>&nbsp;&nbsp;&nbsp;</h6>
+              </td>
+              <td>
+                <h6 id="footer">&nbsp;<a href="register.html">REGISTER</a>&nbsp;&nbsp;&nbsp;</h6>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script>
+      var aP=document.querySelector("#aboutP");
+      var sP=document.querySelector("#searchP");
+      var bP=document.querySelector("#bookP");
+      var rP=document.querySelector("#registerP");
+      aP.addEventListener("mouseover",boxColor);
+      aP.addEventListener("mouseout",boxReg);
+      sP.addEventListener("mouseover",boxColor);
+      sP.addEventListener("mouseout",boxReg);
+      bP.addEventListener("mouseover",boxColor);
+      bP.addEventListener("mouseout",boxReg);
+      rP.addEventListener("mouseover",boxColor);
+      rP.addEventListener("mouseout",boxReg);
+
+      function boxColor(){
+        this.style.backgroundColor="yellow";
+      }
+      function boxReg(){
+        this.style.backgroundColor="transparent";
+      }
+    </script>
+</body>
+</html>
